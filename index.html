@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Mi Aplicación de Selfies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link href="style.css" rel="stylesheet">
+    
+<!--agrega el script parara llamar a la camara web (act 1 del estudiante, act 5 de la maestra)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <center>
+
+        
+
+            <h1>Aplicación de voz para oír lo que quieras
+
+                <img id="logo_img" src="Ponyo.jpeg">
+            </h1>
+            <hr>
+            
+
+            <div class="form-group">
+                <h3>Escribe lo que quieras escuchar</h3>
+                <label>Escribe aquí: </label>
+
+                <textarea id="textbox" class="form-control"></textarea>
+
+            </div>
+
+            <button class="btn btn-primary" onclick="speak()">Iniciar</button>
+            <p>Haz clic en el botón Iniciar</p>
+
+        
+        </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
