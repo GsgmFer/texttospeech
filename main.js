@@ -2,7 +2,7 @@ var SpeechRecognition = window.webkitSpeechRecognition;
 
 var recognition = new SpeechRecognition();
 //agrega esta línea para que reconozca el español
-recognition.lang="es-MX";
+recognition.lang="en-US";
 
 var Textbox = document.getElementById("textbox");
 
@@ -18,8 +18,8 @@ function speak (){
 //intentar cambiar de TAvalue a texto entre comillas
 
     var utterThis = new SpeechSynthesisUtterance(speak_data); 
-    utterThis.lang="es-MX";
-    utterThis.rate=0.8
+    utterThis.lang="en-US";
+    utterThis.rate=1
     synth.speak(utterThis);
 
 }
